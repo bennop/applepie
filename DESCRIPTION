@@ -18,9 +18,9 @@ BugReports: https://github.com/maelle/applepie/issues
 Imports: 
     httr,
     jsonlite,
-    tibble
+    tibble,
+    vcr
 Suggests: 
-    vcr (>= 0.6.0),
     covr,
     testthat (>= 3.0.0),
     whoami

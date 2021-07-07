@@ -1,3 +1,9 @@
-test_that("multiplication works", {
-  expect_equal(2 * 2, 4)
+
+
+test_that("get_packages() works", {
+  skip_if_not_beyonce()
+  vcr::use_cassette("blabla", {
+    pkgs <- get_packages("maelle")
+  })
+  expect_vector(pkgs, character())
 })
